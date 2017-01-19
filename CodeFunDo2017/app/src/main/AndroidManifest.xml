@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jarvis.loginapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/property"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profilePage" />
+        <activity
+            android:name=".register1"
+            android:parentActivityName=".ProfileActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+ ATTENTION: This was auto-generatedse to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".AboutApp"
+            android:parentActivityName=".profilePage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profilePage" />
+            >
+        </activity>
+        <activity
+            android:name=".SessionActivity"
+            android:parentActivityName=".profilePage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profilePage" />
+            >
+        </activity>
+        <activity
+            android:name=".activity_splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".userType"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".cutomActivity" />
+        <activity android:name=".sessionActivityMerchant" />
+        <activity android:name=".MerchantUpdate" />
+        <activity
+            android:name=".fetchActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ProfileActivity_merchant"
+            android:label="@string/title_activity_profile_merchant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".fetchActivity2"></activity>
+    </application>
+
+</manifest>
